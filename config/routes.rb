@@ -3,4 +3,8 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     registrations: 'users/registrations'
   }
-end
+
+  get '/top_headlines', to: 'news#top_headlines'
+  get '/all_articles', to: 'news#all_articles'
+  get '/sources', to: 'news#sources'
+end 
